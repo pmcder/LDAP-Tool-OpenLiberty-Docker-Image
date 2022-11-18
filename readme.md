@@ -10,11 +10,11 @@
 
 docker build -t ldap-tool . 
 
-docker run -d --name ldap-tool-container -p 8080:8080 ldap-tool
+docker run -d --name ldap-tool-container -p 9443:9443 ldap-tool
 
 ## Using the application
 
-Navigate to localhost:8080/search 
+Navigate to https://localhost:9443/search
 
 If connecting to an LDAP server running on your local machine use the following as the host so that the application can connect to localhost from inside the container:
 `host.docker.internal`
